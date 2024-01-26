@@ -29,3 +29,43 @@
     flex-direction: column;
     background-color: white;
 }
+
+.branding-section p{
+    max-width: 400px;
+    text-align: center;
+    margin: auto; /* Wyśrodkuj tekst w pionie */
+
+}
+.branding-section h1{
+    margin-top: 10px;
+}
+
+/* Styl dla głównego kontenera */
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12-kolumnowy układ */
+    grid-gap: 20px; /* Odstępy między kolumnami */
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+/* Styl dla sekcji tekstowej */
+.text-section {
+    grid-column: span 4; /* Zajmuje 4 kolumny */
+    color: black;
+    margin-left: 10px;
+}
+
+/* Styl dla sekcji z obrazkiem */
+.image-section {
+    grid-column: span 2; /* Zajmuje 2 kolumny */
+    width: 250px;
+}
+
+/* Styl dla obrazu, aby był responsywny */
+.image-section img {
+    width: 100%;
+    height: auto;
+    display: block; /* Zapobiega niechcianym marginesom wokół obrazów */
+
+}

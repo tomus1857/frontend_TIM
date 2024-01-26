@@ -1,5 +1,5 @@
 .navigation {
-    background-color: #333; /* Zmienić na preferowany kolor */
+    background-color: #333;
     display: flex;
     justify-content: space-around;
     padding: 1rem;

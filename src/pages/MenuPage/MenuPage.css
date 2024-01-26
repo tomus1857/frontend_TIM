@@ -1,0 +1,27 @@
+
+.menupage {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.menuItem h2{
+    text-align: center;
+    color: black
+}
+
+.menuItem p{
+    text-align: center;
+    color: black
+}
+.diet-card-link1 {
+    text-align: center;
+    color: red
+}
+
+.menuItem h4{
+    text-align: center;
+    color: green
+}

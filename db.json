@@ -3,10 +3,11 @@
     {
       "id": 1,
       "title": "Dieta Sportowa",
-      "description": "Bogata w białko i niskowęglowodanowa, wspomaga budowanie masy mięśniowej.",
-      "calories": "1500-2500",
+      "description": "Dieta dla sportowców bogata w białko, mało węglowodanów, przeznaczona do budowania masy mięśniowej",
+      "add_info": "1500-3000kcal",
       "meals": "5 posiłków",
-      "image": "link_do_obrazka_dla_diety_sportowej"
+      "image": "../../assets/sport.jpg",
+      "link": "/dieta-sportowa"
     },
     {
       "id": 2,
@@ -18,3 +19,4 @@
     }
   ]
 }
+

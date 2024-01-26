@@ -1,0 +1,32 @@
+.contact-info {
+    background: #f7f7f7;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+}
+
+.opening-hours {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+
+.contact-info h1{
+    text-align: center;
+}
+.contact-info address{
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.contact-info p{
+    text-align: center;
+    color: black;
+}
