@@ -1,0 +1,45 @@
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie tytułu */
+    position: relative; /* Pozycjonowanie względne dla nagłówka */
+}
+
+.title-container {
+    /* Nie potrzebujemy już 'flex-grow', bo tytuł będzie wyśrodkowany przez 'justify-content' */
+    text-align: center;
+}
+
+.login-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: absolute; /* Absolutne pozycjonowanie sekcji logowania */
+    top: 50%; /* Pół wysokości nagłówka */
+    right: 1rem; /* Odstęp od prawej krawędzi */
+    transform: translateY(-50%); /* Centrowanie wertykalne */
+}
+
+.login-icon {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.title-container img {
+    /* Przykładowe style */
+    height: 50px; /* Dostosuj wysokość GIFa */
+    width: auto; /* Zachowaj proporcje GIFa */
+    margin-right: 5px; /* Odstęp od tekstu */
+}
+
+.title-container p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-style: italic; /* Pochyła czcionka */
+    font-size: smaller; /* Mniejsza czcionka */
+    color: white; /* Przykładowy kolor tekstu */
+    margin-bottom: 1rem; /* Odstęp od dolnej krawędzi */
+}

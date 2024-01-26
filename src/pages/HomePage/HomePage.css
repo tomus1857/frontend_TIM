@@ -1,0 +1,41 @@
+.branding-section {
+    text-align: center;
+    margin: 2rem 0;
+    color: black
+}
+
+.branding-logo {
+    width: 200px; /* Dostosuj do swoich potrzeb */
+    margin-bottom: 3rem;
+}
+
+.home-page-main {
+    text-align: center;
+    color: black
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.diets-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+
+.home-page {
+    position: relative;
+    min-height: 100vh; /* Zapewnia, że strona zajmuje minimalną pełną wysokość widoku */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}

@@ -1,0 +1,48 @@
+.diet-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    max-width: 300px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: relative;
+    padding-bottom: 80px;
+
+}
+
+.diet-card:hover {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5); /* Dodaje cień, który "podświetla" kartę */
+    border-color: green;
+    transform: translateY(-5px); /* Podnosi kartę w górę */
+    cursor: pointer; /* Zmienia kursor, aby wskazać, że element jest klikalny */
+}
+
+.diet-image {
+    width: 100%;
+}
+
+.diet-details {
+    position: absolute;
+    bottom: 10px; /* Ustawienie detali na dole karty */
+    left: 10px;
+    right: 10px;
+    text-align: left;
+
+}
+
+.calories,
+.meals {
+    background-color: #76b947; /* Przykładowy zielony kolor tła */
+    color: white;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    font-weight: bold; /* Dla wyróżnienia tekstu */
+    display: block;
+    width: fit-content;
+
+}
+
+.diet-card-link {
+    color: white;
+    color:black
+}

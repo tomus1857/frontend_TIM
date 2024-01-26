@@ -1,0 +1,43 @@
+.variants-selector h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Helvetica', sans-serif; /* Możesz wybrać inną czcionkę */
+    font-size: 18px; /* Przykładowy rozmiar czcionki dla przycisków */
+}
+
+.variants-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dwukolumnowy układ */
+    gap: 10px; /* Odstęp między przyciskami */
+}
+
+.variant {
+    background-color: #f0f0f0;
+    border: 2px solid #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.variant:hover,
+.variant.selected {
+    background-color: #76b947; /* Zmienia kolor tła podczas najechania lub gdy jest wybrany */
+    color: white;
+    border-color: #76b947;
+}
+
+@media (max-width: 500px) {
+    .variants-grid {
+        grid-template-columns: 1fr; /* Jednokolumnowy układ na mniejszych ekranach */
+    }
+}
+
+.variants-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    padding: 0 20px; /* Dodaj padding zamiast marginesu, aby zachować przestrzeń wewnątrz kontenera */
+    max-width: 600px; /* Maksymalna szerokość kontenera */
+    margin: 0 auto; /* Wyśrodkowanie kontenera */
+}

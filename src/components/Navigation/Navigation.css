@@ -1,0 +1,16 @@
+.navigation {
+    background-color: #333; /* Zmienić na preferowany kolor */
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link-active {
+    color: red;
+    border-bottom: 8px solid white;
+}

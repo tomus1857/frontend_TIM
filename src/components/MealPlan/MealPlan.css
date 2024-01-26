@@ -1,0 +1,17 @@
+.meal-plan {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2; /* Przykładowy kolor tła */
+    color: black;
+}
+
+.meal {
+    border: 1px solid #ccc; /* Przykładowa ramka */
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.meal h3 {
+    margin-top: 0;
+}

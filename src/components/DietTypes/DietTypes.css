@@ -1,0 +1,36 @@
+.diet-types h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Helvetica', sans-serif; /* Możesz wybrać inną czcionkę */
+    font-size: 18px; /* Przykładowy rozmiar czcionki dla przycisków */
+
+}
+
+.diet-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dwukolumnowy układ */
+    gap: 10px; /* Odstęp między przyciskami */
+}
+
+.diet-option {
+    background-color: #f0f0f0;
+    border: 2px solid #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.diet-option:hover,
+.diet-option.active { /* Zaktualizowano klasę z '.selected' na '.active' */
+    background-color: #76b947; /* Zmienia kolor tła podczas najechania lub gdy jest wybrany */
+    color: white;
+    border-color: #76b947;
+}
+
+@media (max-width: 500px) {
+    .diet-options {
+        grid-template-columns: 1fr; /* Jednokolumnowy układ na mniejszych ekranach */
+    }
+}
+

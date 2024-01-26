@@ -1,0 +1,20 @@
+{
+  "diets": [
+    {
+      "id": 1,
+      "title": "Dieta Sportowa",
+      "description": "Bogata w białko i niskowęglowodanowa, wspomaga budowanie masy mięśniowej.",
+      "calories": "1500-2500",
+      "meals": "5 posiłków",
+      "image": "link_do_obrazka_dla_diety_sportowej"
+    },
+    {
+      "id": 2,
+      "title": "Dieta Wegetariańska",
+      "description": "Różnorodność warzyw i owoców, pełnowartościowe białko roślinne.",
+      "calories": "1200-1800",
+      "meals": "4 posiłki",
+      "image": "link_do_obrazka_dla_diety_wegetariańskiej"
+    }
+  ]
+}
