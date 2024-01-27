@@ -45,7 +45,7 @@ function DietPlanner() {
     return (
         <div className="diet-planner">
             <h2>Planowanie diety</h2>
-            <div>
+            <div className="dni">
                 <label htmlFor="numberOfDays">Liczba dni diety:</label>
                 <input
                     type="number"
@@ -65,7 +65,7 @@ function DietPlanner() {
                     Pomijaj weekendy
                 </label>
             </div>
-            <div>
+            <div className="kalendarz">
                 <DatePicker
                     inline
                     highlightDates={highlightedDays}

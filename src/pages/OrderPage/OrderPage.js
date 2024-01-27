@@ -14,27 +14,33 @@ function OrderPage() {
     };
 
     return (
-
-        <div className="orderpage">
+        <div className="glowna">
             <Header/>
-            <div className="branding-section">
-                <img src={logo} alt="Ananasek Catering Logo" className="branding-logo" />
-                <h1>Zapraszamy do wyboru diety z poniższych dostępnych</h1>
-            </div>
+            <div className="divek">
+                <div className="orderpage1">
+                    <div className="branding-section">
+                        <img src={logo} alt="Ananasek Catering Logo" className="branding-logo" />
+                        <h5>Najlepszy catering pod słońcem</h5>
+                        <h1>Zapraszamy do wyboru diety z poniższych dostępnych</h1>
+                    </div>
 
-            <div className="home-page">
-                <div className="wybor">
-                    <h2>Wybór diety</h2>
-                    <DietTypes/>
+
+                    <div className="home-page">
+                        <div className="wybor">
+                        <h2>Wybór diety</h2>
+                            <DietTypes/>
+                        </div>
+                        <h2>Kaloryczność</h2>
+                        <Variant/>
+                        <h2>Czas trwania diety</h2>
+                        <DietPlanner/>
+                        <h2>Cena</h2>
+                        <h2>75 zł za dzień</h2>
+                        <h2>Zapłacisz 1500 zł</h2>
+                    </div>
                 </div>
-                <h2>Kaloryczność</h2>
-                <Variant/>
-                <h2>Czas trwania diety</h2>
-                <DietPlanner/>
-                <h2>Cena</h2>
-                <h2>75 zł za dzień</h2>
-                <h2>Zapłacisz 1500 zł</h2>
-                <button className="login-button" onClick={handleOrder}>Zamów dietę</button>
+                <button className="login-button1" onClick={handleOrder}>Zamów dietę</button>
+
             </div>
             <Footer />
         </div>

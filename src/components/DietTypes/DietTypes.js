@@ -5,12 +5,14 @@ const DietTypes = () => {
     const [selectedDiet, setSelectedDiet] = useState('standard');
 
     const dietOptions = [
-        { id: 'standard', name: 'Standard' },
-        { id: 'wege', name: 'Wege' },
-        { id: 'low-carb', name: 'Low Carb' },
-        { id: 'keto', name: 'Keto' },
-        { id: 'paleo', name: 'Paleo' },
-        // Dodaj więcej opcji diety według potrzeb
+        { id: 'Dieta-sportowa', name: 'Dieta sportowa' },
+        { id: 'Dieta-tłuszczowa', name: 'Dieta tłuszczowa' },
+        { id: 'Dieta-wege', name: 'Dieta wege' },
+        { id: 'Low-carb', name: 'Low Carb' },
+        { id: 'Low-IG', name: 'Low IG' },
+        { id: 'No-Fish', name: 'No Fish' },
+        { id: 'Home', name: 'Home' },
+        { id: 'Kuchnia-polska', name: 'Kuchnia Polska' }
     ];
 
     const handleSelectDiet = (dietId) => {

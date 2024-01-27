@@ -23,7 +23,6 @@ function ContactPage() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Tutaj możesz dodać logikę do wysyłania formularza, np. przez API
         console.log(formData);
     };
 
