@@ -9,7 +9,8 @@ function ContactPage() {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        message: ''
+        message: '',
+        numer_telefonu: ''
     });
 
     const handleChange = (e) => {
@@ -49,6 +50,15 @@ function ContactPage() {
                         id="email"
                         name="email"
                         value={formData.email}
+                        onChange={handleChange}
+                    />
+
+                    <label htmlFor="email">Numer telefonu</label>
+                    <input
+                        type="numer_telefonu"
+                        id="numer_telefonu"
+                        name="Numer telefonu"
+                        value={formData.numer_telefonu}
                         onChange={handleChange}
                     />
 
