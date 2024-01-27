@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './DietTypes.css';
 
 const DietTypes = () => {
-    const [selectedDiet, setSelectedDiet] = useState('standard');
+    const [selectedDiet, setSelectedDiet] = useState('Dieta-sportowa');
 
     const dietOptions = [
         { id: 'Dieta-sportowa', name: 'Dieta sportowa' },

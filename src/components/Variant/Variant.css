@@ -27,12 +27,6 @@
     border-color: #76b947;
 }
 
-@media (max-width: 500px) {
-    .variants-grid {
-        grid-template-columns: 1fr; /* Jednokolumnowy układ na mniejszych ekranach */
-    }
-}
-
 .variants-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));

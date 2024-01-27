@@ -2,37 +2,40 @@ import React, { useState, useEffect } from 'react';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import './DietPlanner.css';
-import { addDays, isWeekend } from 'date-fns';
+import { addDays, isWeekend, format } from 'date-fns';
 
-function DietPlanner() {
-    const [numberOfDays, setNumberOfDays] = useState(30); // Domyślnie 30 dni
-    const [excludeWeekends, setExcludeWeekends] = useState(false);
+function DietPlanner({ numberOfDays, excludeWeekends, onChange }) {
     const [highlightedDays, setHighlightedDays] = useState([]);
+    const [numberOfDaysInput, setNumberOfDaysInput] = useState(numberOfDays);
+    const [excludeWeekendsToggle, setExcludeWeekendsToggle] = useState(excludeWeekends);
 
     useEffect(() => {
         updateHighlightedDays();
-    }, [numberOfDays, excludeWeekends]);
+    }, [numberOfDaysInput, excludeWeekendsToggle]);
 
     const updateHighlightedDays = () => {
         let days = [];
         let dayCounter = 0;
         let dayIndex = 0;
 
-        while(dayCounter < numberOfDays) {
+        while (dayCounter < numberOfDaysInput) {
             let day = addDays(new Date(), dayIndex);
-            if(excludeWeekends && (isWeekend(day))) {
+            const dayFormatted = format(day, 'EEE'); // Format dnia tygodnia jako "Mon", "Tue", itp.
+
+            if (excludeWeekendsToggle && (dayFormatted === 'Sat' || dayFormatted === 'Sun')) {
                 dayIndex++;
                 continue;
             }
+
             days.push(day);
             dayCounter++;
             dayIndex++;
         }
 
         setHighlightedDays(days);
+        onChange(days.length * 75);
     };
 
-    // Funkcja pomocnicza do wyróżnienia dni w kalendarzu
     const isDayHighlighted = date => {
         return highlightedDays.some(
             highlightedDay =>
@@ -41,6 +44,18 @@ function DietPlanner() {
                 date.getFullYear() === highlightedDay.getFullYear()
         );
     };
+
+    const handleChangeNumberOfDays = (e) => {
+        const newNumberOfDays = parseInt(e.target.value) || 0;
+        setNumberOfDaysInput(newNumberOfDays);
+        onChange(newNumberOfDays * 75);
+    };
+
+    const handleExcludeWeekendsToggle = () => {
+        setExcludeWeekendsToggle(!excludeWeekendsToggle);
+    };
+
+
 
     return (
         <div className="diet-planner">
@@ -51,16 +66,16 @@ function DietPlanner() {
                     type="number"
                     id="numberOfDays"
                     min="1"
-                    value={numberOfDays}
-                    onChange={(e) => setNumberOfDays(parseInt(e.target.value) || 0)}
+                    value={numberOfDaysInput}
+                    onChange={handleChangeNumberOfDays}
                 />
             </div>
             <div>
                 <label>
                     <input
                         type="checkbox"
-                        checked={excludeWeekends}
-                        onChange={(e) => setExcludeWeekends(e.target.checked)}
+                        checked={excludeWeekendsToggle}
+                        onChange={handleExcludeWeekendsToggle}
                     />
                     Pomijaj weekendy
                 </label>
@@ -69,10 +84,10 @@ function DietPlanner() {
                 <DatePicker
                     inline
                     highlightDates={highlightedDays}
+                    selected={highlightedDays[0]} // Zaznacz pierwszy dzień jako początkowy
                     dayClassName={date => isDayHighlighted(date) ? 'highlighted' : undefined}
                 />
             </div>
-
         </div>
     );
 }
