@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const DietCard = ({ title, description, image, add_info, meals, link }) => {
     return (
         <div className="diet-card">
-            <img src={image} alt={title} className="diet-image" />
+            <img src={image} alt={title} className="diet-image1" />
             <div className="diet-info">
                 <Link to={link} className="diet-card-link">
                 <h3>{title}</h3>

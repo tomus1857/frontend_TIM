@@ -1,0 +1,20 @@
+.home-page {
+    position: relative;
+    min-height: 100vh; /* Zapewnia, że strona zajmuje minimalną pełną wysokość widoku */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.login-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #45a049;
+}

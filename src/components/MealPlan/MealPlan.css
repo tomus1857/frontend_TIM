@@ -3,6 +3,8 @@
     justify-content: space-between;
     background-color: #f2f2f2; /* Przykładowy kolor tła */
     color: black;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 .meal {
@@ -10,6 +12,8 @@
     padding: 10px;
     margin: 10px;
     text-align: center;
+    max-width: 400px;
+    min-width: 200px;
 }
 
 .meal h3 {

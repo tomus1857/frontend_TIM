@@ -25,3 +25,10 @@
     text-align: center;
     color: green
 }
+.menuItem h5{
+    text-align: center;
+    color: red;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}

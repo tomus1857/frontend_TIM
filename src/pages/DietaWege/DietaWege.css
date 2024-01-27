@@ -1,0 +1,59 @@
+.main-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Wyśrodkowanie wzdłuż osi poziomej */
+    background-color: white;
+}
+
+.content_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; /* Wyśrodkowanie tekstu na środku */
+}
+
+.content_img img {
+    text-align: center;
+    margin: 2rem 0;
+    height: auto;
+    width: 90%;
+}
+
+.content_img h3 {
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.content {
+    flex: 1;
+    text-align: center; /* Wyśrodkowanie treści na środku */
+}
+
+.side-panel_var{
+    display: flex;
+    justify-content: space-between; /* Dostosowuje elementy do przestrzeni dostępnej w kontenerze */
+    align-items: center;
+    gap: 20px;
+
+}
+
+.content_img h3 {
+    color: black;
+}
+
+.content_img h4 {
+    color: black;
+}
+
+.body {
+    background-color: #ffffff;
+}
+.accordion {
+    color: black;
+}
